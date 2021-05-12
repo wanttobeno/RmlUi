@@ -1,0 +1,1189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D2753208-F0FA-3377-8086-EE8C39047F27}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>RmlCore</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\GitHub\RmlUi\vs\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RmlCore.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RmlCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\GitHub\RmlUi\vs\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RmlCore.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RmlCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GitHub\RmlUi\Include;E:\GitHub\RmlUi\Ext\freetype-windows-binaries-2.10.4\include;E:\GitHub\RmlUi\Samples\shell\include;E:\GitHub\RmlUi\Ext\SDL2-2.0.14\include;E:\GitHub\RmlUi\Ext\SDL2_image-2.0.5-VC\include;E:\GitHub\RmlUi\Ext\glew-2.2.0-win32\include;E:\GitHub\RmlUi\Ext\SFML-2.5.1-vs2017-x86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44062</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>E:/GitHub/RmlUi/vs/RmlCore.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RMLUI_VERSION="4.1-dev";RMLUI_NO_THIRDPARTY_CONTAINERS;ENABLE_GLEW;CMAKE_INTDIR="Debug";RmlCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;RMLUI_VERSION=\"4.1-dev\";RMLUI_NO_THIRDPARTY_CONTAINERS;ENABLE_GLEW;CMAKE_INTDIR=\"Debug\";RmlCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GitHub\RmlUi\Include;E:\GitHub\RmlUi\Ext\freetype-windows-binaries-2.10.4\include;E:\GitHub\RmlUi\Samples\shell\include;E:\GitHub\RmlUi\Ext\SDL2-2.0.14\include;E:\GitHub\RmlUi\Ext\SDL2_image-2.0.5-VC\include;E:\GitHub\RmlUi\Ext\glew-2.2.0-win32\include;E:\GitHub\RmlUi\Ext\SFML-2.5.1-vs2017-x86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GitHub\RmlUi\Include;E:\GitHub\RmlUi\Ext\freetype-windows-binaries-2.10.4\include;E:\GitHub\RmlUi\Samples\shell\include;E:\GitHub\RmlUi\Ext\SDL2-2.0.14\include;E:\GitHub\RmlUi\Ext\SDL2_image-2.0.5-VC\include;E:\GitHub\RmlUi\Ext\glew-2.2.0-win32\include;E:\GitHub\RmlUi\Ext\SFML-2.5.1-vs2017-x86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\Ext\freetype-windows-binaries-2.10.4\win32\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GitHub/RmlUi/vs/Debug/RmlCore.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/GitHub/RmlUi/vs/Debug/RmlCore.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GitHub\RmlUi\Include;E:\GitHub\RmlUi\Ext\freetype-windows-binaries-2.10.4\include;E:\GitHub\RmlUi\Samples\shell\include;E:\GitHub\RmlUi\Ext\SDL2-2.0.14\include;E:\GitHub\RmlUi\Ext\SDL2_image-2.0.5-VC\include;E:\GitHub\RmlUi\Ext\glew-2.2.0-win32\include;E:\GitHub\RmlUi\Ext\SFML-2.5.1-vs2017-x86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44062</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>E:/GitHub/RmlUi/vs/RmlCore.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RMLUI_VERSION="4.1-dev";RMLUI_NO_THIRDPARTY_CONTAINERS;ENABLE_GLEW;CMAKE_INTDIR="Release";RmlCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RMLUI_VERSION=\"4.1-dev\";RMLUI_NO_THIRDPARTY_CONTAINERS;ENABLE_GLEW;CMAKE_INTDIR=\"Release\";RmlCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GitHub\RmlUi\Include;E:\GitHub\RmlUi\Ext\freetype-windows-binaries-2.10.4\include;E:\GitHub\RmlUi\Samples\shell\include;E:\GitHub\RmlUi\Ext\SDL2-2.0.14\include;E:\GitHub\RmlUi\Ext\SDL2_image-2.0.5-VC\include;E:\GitHub\RmlUi\Ext\glew-2.2.0-win32\include;E:\GitHub\RmlUi\Ext\SFML-2.5.1-vs2017-x86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GitHub\RmlUi\Include;E:\GitHub\RmlUi\Ext\freetype-windows-binaries-2.10.4\include;E:\GitHub\RmlUi\Samples\shell\include;E:\GitHub\RmlUi\Ext\SDL2-2.0.14\include;E:\GitHub\RmlUi\Ext\SDL2_image-2.0.5-VC\include;E:\GitHub\RmlUi\Ext\glew-2.2.0-win32\include;E:\GitHub\RmlUi\Ext\SFML-2.5.1-vs2017-x86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\Ext\freetype-windows-binaries-2.10.4\win32\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GitHub/RmlUi/vs/Release/RmlCore.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/GitHub/RmlUi/vs/Release/RmlCore.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GitHub\RmlUi\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/GitHub/RmlUi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\Rolan\App\cmake-3.20.2-windows-x86_64\bin\cmake.exe -SE:/GitHub/RmlUi -BE:/GitHub/RmlUi/vs --check-stamp-file E:/GitHub/RmlUi/vs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeCInformation.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeRCInformation.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CTest.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CheckIncludeFile.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CheckLibraryExists.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindFreetype.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindGLEW.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindOpenGL.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindPackageMessage.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindThreads.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindX11.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\GNUInstallDirs.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Platform\Windows.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\SelectLibraryConfigurations.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\TestForANSIForScope.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\TestForANSIStreamHeaders.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\TestForSTDNamespace.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;E:\GitHub\RmlUi\CMake\FileList.cmake;E:\GitHub\RmlUi\CMake\Modules\FindSDL2.cmake;E:\GitHub\RmlUi\CMake\Modules\FindSDL2_image.cmake;E:\GitHub\RmlUi\CMake\Modules\FindSFML.cmake;E:\GitHub\RmlUi\CMake\RmlUiConfig.cmake.build.in;E:\GitHub\RmlUi\CMake\RmlUiConfig.cmake.install.in;E:\GitHub\RmlUi\CMake\SampleFileList.cmake;E:\GitHub\RmlUi\vs\CMakeFiles\3.20.2\CMakeCCompiler.cmake;E:\GitHub\RmlUi\vs\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;E:\GitHub\RmlUi\vs\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;E:\GitHub\RmlUi\vs\CMakeFiles\3.20.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\GitHub\RmlUi\vs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/GitHub/RmlUi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\Rolan\App\cmake-3.20.2-windows-x86_64\bin\cmake.exe -SE:/GitHub/RmlUi -BE:/GitHub/RmlUi/vs --check-stamp-file E:/GitHub/RmlUi/vs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeCInformation.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeRCInformation.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CTest.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CheckIncludeFile.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\CheckLibraryExists.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindFreetype.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindGLEW.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindOpenGL.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindPackageMessage.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindThreads.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\FindX11.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\GNUInstallDirs.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Platform\Windows.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\SelectLibraryConfigurations.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\TestForANSIForScope.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\TestForANSIStreamHeaders.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\TestForSTDNamespace.cmake;D:\Rolan\App\cmake-3.20.2-windows-x86_64\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;E:\GitHub\RmlUi\CMake\FileList.cmake;E:\GitHub\RmlUi\CMake\Modules\FindSDL2.cmake;E:\GitHub\RmlUi\CMake\Modules\FindSDL2_image.cmake;E:\GitHub\RmlUi\CMake\Modules\FindSFML.cmake;E:\GitHub\RmlUi\CMake\RmlUiConfig.cmake.build.in;E:\GitHub\RmlUi\CMake\RmlUiConfig.cmake.install.in;E:\GitHub\RmlUi\CMake\SampleFileList.cmake;E:\GitHub\RmlUi\vs\CMakeFiles\3.20.2\CMakeCCompiler.cmake;E:\GitHub\RmlUi\vs\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;E:\GitHub\RmlUi\vs\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;E:\GitHub\RmlUi\vs\CMakeFiles\3.20.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\GitHub\RmlUi\vs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\GitHub\RmlUi\vs\CMakeFiles\RmlCore.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/RmlCore.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/RmlCore.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Clock.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\ComputeProperty.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\ContextInstancerDefault.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DataController.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DataControllerDefault.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DataExpression.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DataModel.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DataView.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DataViewDefault.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorGradient.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorNinePatch.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiled.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledBox.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledBoxInstancer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledHorizontal.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledHorizontalInstancer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledImage.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledImageInstancer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledInstancer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledVertical.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledVerticalInstancer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\DocumentHeader.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\ElementAnimation.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\ElementBackgroundBorder.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\ElementDecoration.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\ElementDefinition.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\ElementHandle.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementImage.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementLabel.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementTextSelection.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\InputType.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeButton.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeCheckbox.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeRadio.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeRange.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeSubmit.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeText.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetDropDown.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetSlider.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetTextInput.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetTextInputMultiLine.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetTextInputSingleLine.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetTextInputSingleLinePassword.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\XMLNodeHandlerDataGrid.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\XMLNodeHandlerSelect.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\XMLNodeHandlerTabSet.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Elements\XMLNodeHandlerTextArea.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\ElementStyle.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\EventDispatcher.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\EventInstancerDefault.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\EventSpecification.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FileInterfaceDefault.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEffectBlur.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEffectGlow.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEffectOutline.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEffectShadow.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\GeometryBackgroundBorder.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\GeometryDatabase.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\IdNameMap.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\LayoutBlockBox.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\LayoutBlockBoxSpace.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\LayoutDetails.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\LayoutEngine.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\LayoutInlineBox.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\LayoutInlineBoxText.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\LayoutLineBox.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\LayoutTable.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\LayoutTableDetails.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Memory.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PluginRegistry.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Pool.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\precompiled.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PropertiesIterator.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PropertyParserAnimation.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PropertyParserColour.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PropertyParserDecorator.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PropertyParserFontEffect.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PropertyParserKeyword.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PropertyParserNumber.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PropertyParserRatio.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PropertyParserString.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PropertyParserTransform.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\PropertyShorthandDefinition.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StreamFile.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetFactory.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNode.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelector.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorEmpty.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorFirstChild.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorFirstOfType.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorLastChild.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorLastOfType.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorNthChild.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorNthLastChild.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorNthLastOfType.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorNthOfType.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorOnlyChild.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorOnlyOfType.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\StyleSheetParser.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Template.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\TemplateCache.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\TextureDatabase.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\TextureLayout.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\TextureLayoutRectangle.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\TextureLayoutRow.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\TextureLayoutTexture.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\TextureResource.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\TransformState.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\TransformUtilities.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\Utilities.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\WidgetScroll.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\XMLNodeHandlerBody.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\XMLNodeHandlerDefault.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\XMLNodeHandlerHead.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\XMLNodeHandlerTemplate.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\XMLParseTools.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontEngineInterfaceDefault.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontFace.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontFaceHandleDefault.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontFaceLayer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontFamily.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontProvider.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontTypes.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FreeTypeInterface.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Config\Config.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Animation.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\BaseXMLParser.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Box.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Colour.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Colour.inl" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\ComputedValues.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Containers\chobo\flat_map.hpp" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Containers\chobo\flat_set.hpp" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Containers\robin_hood.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Context.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\ContextInstancer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\ConvolutionFilter.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Core.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\DataModelHandle.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\DataStructHandle.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\DataTypeRegister.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\DataTypes.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\DataVariable.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Debug.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Decorator.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\DecoratorInstancer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Dictionary.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Element.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Element.inl" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\ElementDocument.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\ElementInstancer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\DataFormatter.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\DataQuery.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\DataSource.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\DataSourceListener.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementDataGrid.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementDataGridCell.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementDataGridExpandButton.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementDataGridRow.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementForm.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementFormControl.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementFormControlDataSelect.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementFormControlInput.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementFormControlSelect.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementFormControlTextArea.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementProgress.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Elements\ElementTabSet.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\ElementScroll.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\ElementText.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\ElementUtilities.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Event.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\EventInstancer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\EventListener.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\EventListenerInstancer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Factory.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\FileInterface.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\FontEffect.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\FontEffectInstancer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\FontEngineInterface.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\FontGlyph.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Geometry.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\GeometryUtilities.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Header.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\ID.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Input.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Log.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Math.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Matrix4.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Matrix4.inl" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\ObserverPtr.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Platform.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Plugin.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Profiling.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\PropertiesIteratorView.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Property.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\PropertyDefinition.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\PropertyDictionary.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\PropertyIdSet.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\PropertyParser.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\PropertySpecification.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\RenderInterface.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\ScriptInterface.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Spritesheet.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Stream.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\StreamMemory.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\StringUtilities.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\StyleSheet.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\StyleSheetContainer.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\StyleSheetSpecification.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\StyleSheetTypes.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\SystemInterface.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Texture.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Traits.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Transform.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\TransformPrimitive.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Tween.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\TypeConverter.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\TypeConverter.inl" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Types.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\URL.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Variant.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Variant.inl" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Vector2.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Vector2.inl" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Vector3.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Vector3.inl" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Vector4.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Vector4.inl" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\Vertex.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\XMLNodeHandler.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core\XMLParser.h" />
+    <ClInclude Include="E:\GitHub\RmlUi\Include\RmlUi\Core.h" />
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\BaseXMLParser.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Box.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Clock.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ComputeProperty.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Context.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ContextInstancer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ContextInstancerDefault.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ConvolutionFilter.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Core.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DataController.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DataControllerDefault.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DataExpression.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DataModel.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DataModelHandle.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DataTypeRegister.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DataVariable.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DataView.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DataViewDefault.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Decorator.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorGradient.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorInstancer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorNinePatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiled.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledBox.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledBoxInstancer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledHorizontal.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledHorizontalInstancer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledImage.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledImageInstancer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledInstancer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledVertical.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DecoratorTiledVerticalInstancer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\DocumentHeader.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Element.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ElementAnimation.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ElementBackgroundBorder.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ElementDecoration.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ElementDefinition.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ElementDocument.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ElementHandle.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ElementInstancer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\DataFormatter.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\DataQuery.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\DataSource.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\DataSourceListener.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementDataGrid.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementDataGridCell.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementDataGridExpandButton.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementDataGridRow.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementForm.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementFormControl.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementFormControlDataSelect.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementFormControlInput.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementFormControlSelect.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementFormControlTextArea.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementImage.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementLabel.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementProgress.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementTabSet.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\ElementTextSelection.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\InputType.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeButton.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeCheckbox.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeRadio.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeRange.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeSubmit.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\InputTypeText.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetDropDown.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetSlider.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetTextInput.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetTextInputMultiLine.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetTextInputSingleLine.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\WidgetTextInputSingleLinePassword.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\XMLNodeHandlerDataGrid.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\XMLNodeHandlerSelect.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\XMLNodeHandlerTabSet.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Elements\XMLNodeHandlerTextArea.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ElementScroll.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ElementStyle.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ElementText.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ElementUtilities.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Event.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\EventDispatcher.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\EventInstancer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\EventInstancerDefault.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\EventListenerInstancer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\EventSpecification.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Factory.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FileInterface.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FileInterfaceDefault.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEffect.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEffectBlur.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEffectGlow.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEffectInstancer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEffectOutline.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEffectShadow.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEngineInterface.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Geometry.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\GeometryBackgroundBorder.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\GeometryDatabase.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\GeometryUtilities.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\LayoutBlockBox.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\LayoutBlockBoxSpace.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\LayoutDetails.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\LayoutEngine.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\LayoutInlineBox.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\LayoutInlineBoxText.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\LayoutLineBox.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\LayoutTable.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\LayoutTableDetails.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Log.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Math.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Memory.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\ObserverPtr.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Plugin.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PluginRegistry.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Profiling.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertiesIteratorView.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Property.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertyDefinition.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertyDictionary.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertyParserAnimation.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertyParserColour.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertyParserDecorator.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertyParserFontEffect.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertyParserKeyword.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertyParserNumber.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertyParserRatio.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertyParserString.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertyParserTransform.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\PropertySpecification.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\RenderInterface.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Spritesheet.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Stream.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StreamFile.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StreamMemory.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StringUtilities.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheet.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetContainer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetFactory.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNode.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelector.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorEmpty.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorFirstChild.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorFirstOfType.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorLastChild.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorLastOfType.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorNthChild.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorNthLastChild.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorNthLastOfType.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorNthOfType.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorOnlyChild.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetNodeSelectorOnlyOfType.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetParser.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\StyleSheetSpecification.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\SystemInterface.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Template.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\TemplateCache.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Texture.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\TextureDatabase.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\TextureLayout.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\TextureLayoutRectangle.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\TextureLayoutRow.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\TextureLayoutTexture.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\TextureResource.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Transform.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\TransformPrimitive.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\TransformState.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\TransformUtilities.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Tween.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\TypeConverter.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\URL.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\Variant.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\WidgetScroll.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\XMLNodeHandler.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\XMLNodeHandlerBody.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\XMLNodeHandlerDefault.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\XMLNodeHandlerHead.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\XMLNodeHandlerTemplate.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\XMLParser.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\XMLParseTools.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontEngineInterfaceDefault.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontFace.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontFaceHandleDefault.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontFaceLayer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontFamily.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FontProvider.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\RmlUi\Source\Core\FontEngineDefault\FreeTypeInterface.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/RmlUi/vs/CMakeFiles/RmlCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="E:\GitHub\RmlUi\vs\CMakeFiles\RmlCore.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="E:\GitHub\RmlUi\vs\CMakeFiles\RmlCore.dir\Release\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\GitHub\RmlUi\vs\ZERO_CHECK.vcxproj">
+      <Project>{546AA885-83F7-3A27-86E8-20484507AA4B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
